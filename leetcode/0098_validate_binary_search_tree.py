@@ -1,3 +1,5 @@
+from typing import Optional
+
 # Definition for a binary tree node.
 class TreeNode:
     def __init__(self, val=0, left=None, right=None):
@@ -6,7 +8,7 @@ class TreeNode:
         self.right = right
 
 class Solution:
-    def isValidBST(self, root: TreeNode | None) -> bool:
+    def isValidBST(self, root: Optional[TreeNode]) -> bool:
 
         def inorder_traversal(node):
             if not node:
